@@ -8,10 +8,10 @@
 #include "distributed_structures.h"
 #include "distributed_common.h"
 #include "data_distributor.h"
-#include "distributed_synchronous.h"
 #include "distributed_synchronous_schema.h"
 #include "distributed_asynchronous.h"
 #include "distributed_svm.h"
+#include "distributed_synchronousXXX.h"
 
 #ifdef PROFILING
 #define NPROF(message) {}
