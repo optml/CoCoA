@@ -1,3 +1,5 @@
+*~
+
 # Compiled Object files
 *.slo
 *.lo
@@ -26,3 +28,26 @@
 *.exe
 *.out
 *.app
+
+Makefile
+Debug
+
+.cproject
+.project
+config.log
+config.status
+
+asfsafa.in
+aclocal.m4
+autom4te.cache
+install-sh
+missing
+
+my_config.h
+configure.ac_OLD
+generateConfigs.sh
+depcomp
+compile
+
+
+src/.deps
