@@ -1,5 +1,5 @@
 # what flags you want to pass to the C compiler & linker
-AM_CPPFLAGS = -DWITH_MPI --pedantic -Wall -std=c99 -O3 $(MPI_CXXFLAGS)     
+AM_CPPFLAGS = -DWITH_MPI  -Wall -Wlong-long  -O3 $(MPI_CXXFLAGS)      # --pedantic
 AM_LDFLAGS =  -lgsl -lgslcblas
 
 #CXX = $(MPICXX)
