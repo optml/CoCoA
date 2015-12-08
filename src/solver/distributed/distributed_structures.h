@@ -34,7 +34,6 @@ using boost::timer::cpu_timer;
 using boost::timer::cpu_times;
 using boost::timer::nanosecond_type;
 
-#include "distributed_asynchronous_topologies.h"
 
 enum DistributedMethod {
 	SynchronousGather = 0,
