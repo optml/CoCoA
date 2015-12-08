@@ -3,11 +3,11 @@
 
 AC_PREREQ([2.69])
 AC_INIT(cocoa, 1.0, takac.mt@gmail.com)
-AM_INIT_AUTOMAKE([1.12 foreign no-define])
 AC_MSG_NOTICE([CoCoA Framework.])
+AM_INIT_AUTOMAKE([1.12 foreign no-define])
 
-#AC_CONFIG_SRCDIR([my_config.h])
-#AC_CONFIG_HEADERS([config.h])
+
+
 
  
 echo "                             Testing for a C compiler"
@@ -16,7 +16,7 @@ echo "                             Testing for a C++ compiler"
 AC_PROG_CXX
 AC_LANG(C++)
 
-AC_CHECK_HEADERS(iostream)
+
 
 
 # Checks for programs.
@@ -24,6 +24,11 @@ AC_PROG_INSTALL
 AC_PROG_MAKE_SET
 
 # Checks for libraries.
+AC_CHECK_HEADERS(iostream)
+AC_CHECK_HEADERS(stdio.h)
+AC_CHECK_HEADERS(stdlib.h)
+AC_CHECK_HEADERS(unistd.h)
+
 
 # Checks for header files.
 
@@ -32,6 +37,8 @@ AC_PROG_MAKE_SET
 # Checks for library functions.
 
 # Configure MPI
+AC_PROG_CXX([mpic++ mpicxx])
+
 
 
 AC_CONFIG_FILES([Makefile

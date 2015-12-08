@@ -91,7 +91,7 @@ am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_cocoa_OBJECTS = cocoa.$(OBJEXT)
 cocoa_OBJECTS = $(am_cocoa_OBJECTS)
-cocoa_LDADD = $(LDADD)
+cocoa_DEPENDENCIES =
 cocoa_LINK = $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(cocoa_LDFLAGS) \
 	$(LDFLAGS) -o $@
 AM_V_P = $(am__v_P_@AM_V@)
@@ -160,7 +160,6 @@ AWK = @AWK@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
-CPP = @CPP@
 CPPFLAGS = @CPPFLAGS@
 
 #CXX = $(MPICXX)
@@ -246,10 +245,11 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 
 # what flags you want to pass to the C compiler & linker
-AM_CPPFLAGS = -DWITH_MPI --pedantic -Wall -std=c99 -O3 $(MPI_CXXFLAGS)
-AM_LDFLAGS = 
+AM_CPPFLAGS = -DWITH_MPI --pedantic -Wall -std=c99 -O3 $(MPI_CXXFLAGS)     
+AM_LDFLAGS = -lgsl -lgslcblas
 cocoa_SOURCES = cocoa.cpp
-cocoa_LDFLAGS = $(MPI_CXXLDFLAGS)
+cocoa_LDFLAGS = $(MPI_CXXLDFLAGS)    -fopenmp
+cocoa_LDADD = -lboost_system -lboost_timer -lboost_chrono -lrt  -lboost_mpi -lboost_serialization   -lgsl -lgslcblas -lm -lboost_thread
 all: all-am
 
 .SUFFIXES:
