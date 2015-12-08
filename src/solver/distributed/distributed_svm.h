@@ -9,8 +9,6 @@
 #define DISTRIBUTED_SVM_H_
 
 #include "distributed_include.h"
-
-
 #include "distributed_structures.h"
 
 using namespace std;

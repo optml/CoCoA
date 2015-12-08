@@ -1,12 +1,10 @@
 #ifndef ACDC_DISTRIBUTED_COMMON
 #define ACDC_DISTRIBUTED_COMMON
 
-#include "distributed_include.h"
-
-
 #include "distributed_essentials.h"
-#include "distributed_structures.h"
 #include "data_distributor.h"
+#include "distributed_include.h"
+#include "distributed_structures.h"
 
 
 
