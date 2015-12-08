@@ -51,3 +51,5 @@ compile
 lx_find_mpi.m4
 src/cocoa
 src/.deps
+
+data/a1a.4/*.log
