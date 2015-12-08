@@ -40,7 +40,7 @@ config.status
 asfsafa.in
 aclocal.m4
 autom4te.cache
-install-sh
+ 
 missing
 
 my_config.h

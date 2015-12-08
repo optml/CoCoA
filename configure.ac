@@ -24,14 +24,37 @@ AC_PROG_INSTALL
 AC_PROG_MAKE_SET
 
 # Checks for libraries.
+
+echo " "
+echo "                             Testing for GSL and CLBAS Libraries "
+echo " "
+
+AC_CHECK_LIB([gslcblas],[cblas_dgemm])
+if test "$ac_cv_lib_gslcblas_cblas_dgemm" == no
+then
+	AC_MSG_ERROR([Error, the boost_system header is missing!])
+fi
+
+
+
+
+
+#-lboost_system -lboost_timer -lboost_chrono -lrt  -lboost_mpi -lboost_serialization   -lgsl -lgslcblas -lm -lboost_thread
+echo " "
+echo "                             Testing for Boost Libraries "
+echo " "
+AC_CHECK_LIB(boost_system)
+
+
+
+
+
+
+# Checks for header files.
 AC_CHECK_HEADERS(iostream)
 AC_CHECK_HEADERS(stdio.h)
 AC_CHECK_HEADERS(stdlib.h)
 AC_CHECK_HEADERS(unistd.h)
-
-
-# Checks for header files.
-
 # Checks for typedefs, structures, and compiler characteristics.
 
 # Checks for library functions.
