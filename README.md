@@ -33,4 +33,4 @@ The meaning of the parameters:
 ## References
 The algorithmic framework is described in more detail in the following paper:
 
-_Chenxin Ma, Jakub Konečný, Martin Jaggi, Virginia Smith, Michael I. Jordan, Peter Richtárik, Martin Takáč [Distributed Optimization with Arbitrary Local Solvers](http://arxiv.org/abs/1512.04039). Optimization Methods and Software, Vol23-Iss4, pages 813-848, 2017.
+_Chenxin Ma, Jakub Konečný, Martin Jaggi, Virginia Smith, Michael I. Jordan, Peter Richtárik, Martin Takáč [Distributed Optimization with Arbitrary Local Solvers](http://arxiv.org/abs/1512.04039). Optimization Methods and Software, Vol 23 - Iss 4, pages 813-848, 2017._
